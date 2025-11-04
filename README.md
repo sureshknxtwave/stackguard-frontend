@@ -138,7 +138,7 @@ Includes a logout button
 Smooth entry/exit animations with Framer Motion
 
 🖼️ UI Screenshot:
-![Dashboard Page](./screenshots/dashboard.png)
+![Dashboard Page](./src/screenshots/dashboard.png)
 
 💅 Styling Details
 
