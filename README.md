@@ -122,7 +122,7 @@ Public key input validation (100–1000 characters)
 Professional background image for secure verification
 
 🖼️ UI Screenshot:
-![Config Page](./src/assets/ui-ss3.png)
+(./src/assets/ui-ss3.png)
 
 
 🔵 3. Dashboard
