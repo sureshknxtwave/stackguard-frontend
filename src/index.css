@@ -1,0 +1,277 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+  font-family: "Poppins", sans-serif !important;
+  margin: 0;
+  
+}
+
+.auth-container,
+.config-container {
+  display: grid;
+  grid-template-columns: 62% 38%; /* 👈 Left 65%, Right 35% */
+  height: 100vh;
+}
+
+
+.auth-left,
+.config-left {
+  background-color: #e5e5e5;
+  border-radius: 10px;
+  margin: 2rem;
+}
+
+.auth-right,
+.config-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 80px;
+}
+
+.auth-logo {
+  height: 50px;
+  margin-bottom: 10px;
+  
+}
+
+.auth-header {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.auth-form {
+  margin-top: 16px;
+}
+
+.name-fields {
+  display: flex;
+  gap: 12px;
+}
+
+/* Terms of Service and Privacy Policy text */
+.auth-terms {
+  display: block;
+  margin-top: 18px;
+  font-size: 14px;
+  text-align: center;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Links inside terms text */
+.auth-terms a {
+  color: #000; /* black like your design */
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+/* Sign-in / Sign-up toggle text */
+.auth-toggle {
+  text-align: center;
+  margin-top: 24px; /* nice spacing below terms */
+  font-size: 15px;
+  color: #000;
+  font-weight: 500;
+}
+
+/* Links inside toggle text */
+.auth-toggle a {
+  color: #000;
+  text-decoration: underline;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+
+/* Input field styling */
+.ant-input,
+.ant-input-password {
+  background-color: #f5f5f5 !important; /* light gray background */
+  border: none !important; /* remove border */
+  border-radius: 8px !important; /* rounded corners */
+  height: 45px !important; /* consistent height */
+  font-size: 15px;
+  color: #333;
+  box-shadow: none !important;
+}
+
+.ant-input::placeholder {
+  color: #a0a0a0; /* softer placeholder text */
+}
+
+.ant-input:focus,
+.ant-input-focused,
+.ant-input-password:focus,
+.ant-input-password-focused {
+  background-color: #f5f5f5 !important;
+  border: 1px solid #d3b4ff !important; /* subtle purple border on focus */
+  box-shadow: 0 0 0 2px rgba(75, 0, 130, 0.15) !important;
+}
+
+/* Equal width name fields */
+.name-fields {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.name-fields .ant-form-item {
+  flex: 1;
+}
+
+/* Increase text size for overall form */
+.ant-form-item-label > label {
+  font-size: 15px;
+  font-weight: 500;
+  color: #444;
+}
+
+
+/* Ensure form fields and validation messages have space before the button */
+.auth-form .ant-form-item {
+  margin-bottom: 20px; /* was 16px earlier — now slightly more */
+}
+
+/* Also ensure button doesn’t overlap validation text */
+.auth-form button {
+  margin-top: 8px;
+}
+
+
+.auth-container {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  height: 100vh;
+}
+
+/* ✅ Full background image on left side */
+.auth-left {
+  background-image: url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  margin: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Gradient overlay for readability */
+.auth-left::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(75, 0, 130, 0.4),
+    rgba(0, 0, 0, 0.2)
+  );
+  z-index: 1;
+}
+
+/* Right section (form) */
+.auth-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 80px;
+}
+
+/* Make sure the right content stays above */
+.auth-right * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Logo and text spacing */
+.auth-logo {
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.auth-header {
+  margin-bottom: 24px;
+}
+
+/* Responsive - mobile view hides left section */
+@media (max-width: 900px) {
+  .auth-container {
+    grid-template-columns: 1fr;
+  }
+  .auth-left {
+    display: none;
+  }
+  .auth-right {
+    padding: 40px;
+  }
+}
+
+
+
+/* Layout for Config Page */
+.config-container {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  height: 100vh;
+}
+
+/* ✅ Left side with full background image */
+.config-left {
+  background-image: url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  margin: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Gradient overlay for better contrast */
+.config-left::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(75, 0, 130, 0.45),
+    rgba(0, 0, 0, 0.2)
+  );
+  z-index: 1;
+}
+
+/* Right panel styling */
+.config-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 80px;
+}
+
+/* Bring text above gradient */
+.config-right * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Responsive - hide image on small screens */
+@media (max-width: 900px) {
+  .config-container {
+    grid-template-columns: 1fr;
+  }
+  .config-left {
+    display: none;
+  }
+  .config-right {
+    padding: 40px;
+  }
+}
