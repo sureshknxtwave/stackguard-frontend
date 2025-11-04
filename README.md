@@ -104,8 +104,8 @@ Purple theme consistent with StackGuard branding
 
 🖼️ UI Screenshot:
 
-![Sign Up Page](./src/assets/ui-ss1.png)
-![Sign In Page](./src/assets/ui-ss2.png)
+![Sign Up Page](./screenshots/signup.png)
+![Sign In Page](./screenshots/signin.png)
 
 
 
@@ -122,7 +122,7 @@ Public key input validation (100–1000 characters)
 Professional background image for secure verification
 
 🖼️ UI Screenshot:
-(./src/assets/ui-ss3.png)
+![Config Page](./screenshots/config.png)
 
 
 🔵 3. Dashboard
@@ -138,7 +138,7 @@ Includes a logout button
 Smooth entry/exit animations with Framer Motion
 
 🖼️ UI Screenshot:
-![Dashboard Page](./src/assets/ui-ss4.png)
+![Dashboard Page](./screenshots/dashboard.png)
 
 💅 Styling Details
 
